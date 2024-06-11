@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provedor de Internet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 10px 0;
+        }
+        #planos {
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        #cadastro {
+            padding: 20px;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"], input[type="button"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="button"] {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+        input[type="button"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>RIOS NET PROVEDOR DE INTERNET</h1>
+    </header>
+    
+    <section id="planos">
+        <h2>Nossos Planos</h2>
+        <ul>
+            <li>Plano Básico - 100MB - R$ 49,99</li>
+            <li>Plano Intermediário - 200MB - R$ 79,99</li>
+            <li>Plano Avançado - 500MB - R$ 149,99</li>
+        </ul>
+    </section>
+    
+    <section id="cadastro">
+        <h2>Cadastro</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br>
+            
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf" maxlength="11" required><br>
+            
+            <label for="rg">RG:</label>
+            <input type="text" id="rg" name="rg" maxlength="9" required><br>
+            
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" required><br>
+            
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" name="telefone" maxlength="11" required><br>
+            
+            <input type="button" value="Cadastrar">
+        </form>
+    </section>
+    
+    <footer>
+        <p>Contato: (XX) XXXX-XXXX | Endereço: Rua XYZ, 123</p>
+    </footer>
+</body>
+</html>
